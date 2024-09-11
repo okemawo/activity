@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Storage Demo</title>
+    <link rel="icon" href="data:,"> <!-- This line avoids the 404 error -->
+    <script src="storage.js" defer></script>
+</head>
+<body>
+    <h1>Browser Storage Demo</h1>
+    <button id="cookieBtn">Save to Cookies</button>
+    <button id="localStorageBtn">Save to Local Storage</button>
+    <button id="sessionStorageBtn">Save to Session Storage</button>
+    <p id="status">Click a button to store data.</p>
+    <script>
+        // Add event listeners to buttons
+        document.getElementById('cookieBtn').addEventListener('click', function() {
+            saveToStorage('cookie', '<FILL IN KEY>', '<FILL IN VALUE>');
+        });
+        document.getElementById('localStorageBtn').addEventListener('click', function() {
+            saveToStorage('localStorage', '<FILL IN KEY>', '<FILL IN VALUE>');
+        });
+        document.getElementById('sessionStorageBtn').addEventListener('click', function() {
+            saveToStorage('sessionStorage', '<FILL IN KEY>', '<FILL IN VALUE>');
+        });
+    </script>
+</body>
+</html>
