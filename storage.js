@@ -17,7 +17,7 @@ function saveToStorage(type, key, value) {
     }
 }
 
-// // Function to update the status text on the webpage
-// function updateStatus(message) {
-//     document.getElementById('status').innerText = message;
-// }
+// Function to update the status text on the webpage
+function updateStatus(message) {
+    document.getElementById('status').innerText = message;
+}
